@@ -72,6 +72,6 @@ public class AccountLessor extends Account{
 
     @Override
     public String toString() {
-        return getCCCD()+","+getHoVaTen()+","+df.format(getNgaySinh())+","+getGioiTinh()+","+isTrangThaiGiaoDich()+","+dienTichNha+","+diaChi+","+giaTien;
+        return getCCCD()+","+getHoVaTen()+","+df.format(getNgaySinh())+","+getGioiTinh()+","+isTrangThaiGiaoDich()+","+dienTichNha+","+diaChi+","+soNguoi+","+giaTien;
     }
 }

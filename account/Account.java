@@ -2,7 +2,7 @@ package Bai_Tap_Lon.account;
 
 import java.util.Date;
 
-public class Account implements Comparable<Account>{
+public abstract class Account implements Comparable<Account>{
     private String CCCD;
     private String hoVaTen;
     private Date ngaySinh;
@@ -78,6 +78,10 @@ public class Account implements Comparable<Account>{
 
     @Override
     public int compareTo(Account o) {
+        if (this.getHoVaTen().equals(o.getHoVaTen())) {
+            return -o.getNgaySinh().compareTo(this.ngaySinh);
+        }
         return hoVaTen.compareTo(o.getHoVaTen());
     }
+
 }
